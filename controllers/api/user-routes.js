@@ -23,7 +23,7 @@ router.post('/login', async (req, res) => {
       
      
       res.json({message: `Welcome ${validUsername.username}`})
-  } catch (err) {
+      } catch (err) {
       res.status(400).json(err);
   }
 });
